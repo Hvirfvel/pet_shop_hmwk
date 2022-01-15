@@ -38,3 +38,18 @@ def remove_pet_by_name(pet_shop, input_name):
         if pet["name"] == input_name:
             del pet_shop["pets"][list_index]
             break
+
+def add_pet_to_stock(pet_shop, input_new_pet):
+    pet_shop["pets"].append(input_new_pet)
+
+def get_customer_cash (customer):
+    return customer["cash"]
+
+def remove_customer_cash(customer, used_cash):
+    customer["cash"] -= used_cash
+
+def get_customer_pet_count(customer):
+    return len(customer["pets"])
+
+def add_pet_to_customer(customer, input_new_pet):
+    customer["pets"].append(input_new_pet)
